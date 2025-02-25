@@ -1,105 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Yola Tri Vani</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Selamat datang di Perpustakaan Yola Tri Vani</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#biodata">Biodata</a></li>
-                    <li><a href="#form">Formulir</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f4f8;  /* Latar belakang cerah */
+    color: #333;
+}
 
-    <section id="home">
-        <div class="container">
-            <h2>Home</h2>
-            <p>Selamat datang di Perpustakaan Yola Tri Vani! Kami menyediakan berbagai koleksi buku dan layanan untuk meningkatkan literasi masyarakat.</p>
-        </div>
-    </section>
+header {
+    background-color: #1e2a3a;  /* Latar belakang gelap untuk header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Saya adalah pengelola Perpustakaan Yola Tri Vani. Kami berkomitmen untuk menyediakan akses ke berbagai literatur yang dapat membantu masyarakat dalam pendidikan dan penelitian.</p>
-        </div>
-    </section>
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
 
-    <section id="biodata">
-        <div class="container">
-            <h2>Biodata</h2>
-            <table>
-                <tr>
-                    <th>Nama</th>
-                    <td>Yola Tri Vani</td>
-                </tr>
-                <tr>
-                    <th>Alamat</th>
-                    <td>Jalan Pendidikan No. 10, Kota Yola</td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td>yola@perpustakaanyola.com</td>
-                </tr>
-                <tr>
-                    <th>Telepon</th>
-                    <td>(021) 1234-5678</td>
-                </tr>
-                <tr>
-                    <th>Profesi</th>
-                    <td>Pengelola Perpustakaan</td>
-                </tr>
-            </table>
-        </div>
-    </section>
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
 
-    <section id="form">
-        <div class="container">
-            <h2>Formulir Pendaftaran Anggota</h2>
-            <form action="#" method="POST">
-                <label for="name">Nama Lengkap:</label>
-                <input type="text" id="name" name="name" required>
+nav ul li {
+    margin: 0 15px;
+}
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
 
-                <label for="phone">Nomor Telepon:</label>
-                <input type="text" id="phone" name="phone" required>
+nav ul li a:hover {
+    text-decoration: underline;
+}
 
-                <label for="address">Alamat:</label>
-                <textarea id="address" name="address" required></textarea>
+section {
+    padding: 50px 20px;
+    background-color: #ffffff;  /* Latar belakang putih untuk setiap section */
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-                <button type="submit">Daftar</button>
-            </form>
-        </div>
-    </section>
+section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
 
-    <section id="contact">
-        <div class="container">
-            <h2>Kontak Kami</h2>
-            <p>Jika Anda memiliki pertanyaan atau ingin menghubungi kami, silakan gunakan informasi berikut:</p>
-            <ul>
-                <li>Alamat: Jalan Pendidikan No. 10, Kota Yola</li>
-                <li>Email: info@perpustakaanyola.com</li>
-                <li>Telepon: (021) 1234-5678</li>
-            </ul>
-        </div>
-    </section>
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Perpustakaan Yola Tri Vani. Semua hak dilindungi.</p>
-        </div>
-    </footer>
-</body>
-</html>
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #1e2a3a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #35495e;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #1e2a3a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

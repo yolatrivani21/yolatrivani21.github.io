@@ -93,8 +93,8 @@
             </table>
         </div>
     <div class="container" id="contact">
-        <h2>Contact Us</h2>
-        <form>
+    <h2>Contact Us</h2>
+    <form>
             <label for="name">Nama:</label>
             <input type="text" id="name" name="name"><br><br>
             <label for="email">Email:</label>
@@ -104,7 +104,7 @@
             <label for="suggestion">Saran:</label>
             <input type="suggestion" id="name" suggestion="name"><br><br>
             <button type="submit">Kirim</button>
-        </form>
+     </form>
      </div>
     <footer>
         <div class="container">

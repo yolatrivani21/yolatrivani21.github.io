@@ -15,7 +15,7 @@
     <section id="home">
         <div class="container">
             <h2>Home</h2>
-            <p>Website ini bekerja sama dengan Digilab Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik. Kami bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
+            <p>Website ini bekerja sama dengan Digilib Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik. Kami bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
             <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan kami untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
         </div>
     </section>

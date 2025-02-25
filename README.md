@@ -46,13 +46,16 @@
     </div>
     <div class="container">
         <h2>Home</h2>
-        <p>Website ini bekerja sama dengan Digilib USU untuk menyediakan sumber daya akademik terbaik.</p>
+        <p>Website ini bekerja sama dengan Digilab Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik. Kami bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
+     <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan kami untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
     </div>
+    </section>
+<p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
 </body>
 </html>
 
 <!-- about.html -->
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -80,18 +83,17 @@
     <div class="container">
         <h1>About Me</h1>
         <p><strong>Nama:</strong> Yola Tri Vani</p>
-        <p><strong>NIM:</strong> 12345678</p>
-        <p><strong>Program Studi:</strong> Ilmu Perpustakaan</p>
+        <p><strong>NIM:</strong> 220709056</p>
+        <p><strong>Program Studi:</strong>Perpustakaan dan Sains Informasi</p>
         <p><strong>Fakultas:</strong> Ilmu Budaya</p>
         <p><strong>Universitas:</strong> Universitas Sumatera Utara</p>
         <p><strong>Domisili:</strong> Medan</p>
-        <p><strong>Email:</strong> yola@example.com</p>
+        <p><strong>Email:</strong> yolatrivani21@gmail.com</p>
     </div>
 </body>
 </html>
 
 <!-- contact.html -->
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -121,8 +123,12 @@
         <form>
             <label for="name">Nama:</label>
             <input type="text" id="name" name="name"><br><br>
-            <label for="message">Pesan:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <label for="email">Email:</label><br>
+            <textarea id="email" name=email" rows="4" cols="50"></textarea><br><br>
+            <label for="Complaint">Pengaduan:</label>
+            <input type="complaint" id="name" complaint="name"><br><br>
+             <label for="suggestion">Saran:</label><br>
+            <textarea id="suggestion" name=suggestion" rows="4" cols="50"></textarea><br><br>
             <button type="submit">Kirim</button>
         </form>
     </div>

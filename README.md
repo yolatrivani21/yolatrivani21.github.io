@@ -15,7 +15,7 @@
     <section id="home">
         <div class="container">
             <h2>Home</h2>
-            <p>Selamat Datang di Perpustakaan Yola Tri Vani! Website ini bekerja sama dengan Digilab Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik. Kami bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
+            <p>Website ini bekerja sama dengan Digilab Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik. Kami bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
             <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan kami untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
         </div>
     </section>
@@ -65,10 +65,10 @@
         </div>
     </section>
 
-   <section id="contact">
+  <section id="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>Jika Anda memiliki pengaduan atau saran, silakan isi formulir di bawah ini:</p>
+            <h2>Formulir Pengaduan dan Saran</h2>
+            <p>Silakan isi formulir di bawah ini untuk memberikan pengaduan atau saran:</p>
             <form action="#" method="POST">
                 <label for="name">Nama Lengkap:</label>
                 <input type="text" id="name" name="name" required>
@@ -84,6 +84,22 @@
 
                 <button type="submit">Kirim</button>
             </form>
+
+            <h3>Riwayat Pengaduan dan Saran</h3>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Pengaduan</th>
+                    <th>Saran</th>
+                </tr>
+                <tr>
+                    <td>Contoh Nama</td>
+                    <td>contoh@email.com</td>
+                    <td>Contoh pengaduan...</td>
+                    <td>Contoh saran...</td>
+                </tr>
+            </table>
         </div>
     </section>
 </body>

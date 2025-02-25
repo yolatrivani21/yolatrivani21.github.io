@@ -71,15 +71,19 @@
             <p>Jika Anda memiliki pengaduan atau saran, silakan isi formulir di bawah ini:</p>
             <form action="#" method="POST">
                 <label for="name">Nama Lengkap:</label>
+                
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Email:</label>
+                
                 <input type="email" id="email" name="email" required>
 
                 <label for="complaint">Pengaduan:</label>
+                
                 <textarea id="complaint" name="complaint"></textarea>
 
                 <label for="suggestion">Saran:</label>
+                
                 <textarea id="suggestion" name="suggestion"></textarea>
 
                 <button type="submit">Kirim</button>

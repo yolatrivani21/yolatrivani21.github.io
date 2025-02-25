@@ -1,4 +1,3 @@
-
 <body>
     <header>
         <div class="container">
@@ -20,7 +19,7 @@
             <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan kami untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
         </div>
     </section>
-
+<p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
@@ -87,7 +86,6 @@
             </form>
         </div>
     </section>
-
     <footer>
         <div class="container">
             <p>&copy; 2025 Perpustakaan Yola Tri Vani. Semua hak dilindungi.</p>

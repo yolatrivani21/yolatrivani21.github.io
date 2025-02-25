@@ -70,37 +70,25 @@
             <h2>Formulir Pengaduan dan Saran</h2>
             <p>Silakan isi formulir di bawah ini untuk memberikan pengaduan atau saran:</p>
             <form action="#" method="POST">
-                <label for="name">Nama Lengkap:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="complaint">Pengaduan:</label>
-                <textarea id="complaint" name="complaint"></textarea>
-
-                <label for="suggestion">Saran:</label>
-                <textarea id="suggestion" name="suggestion"></textarea>
-
-                <button type="submit">Kirim</button>
+                <table>
+                    <tr>
+                        <th><label for="name">Nama Lengkap:</label></th>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">Email:</label></th>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="complaint">Pengaduan:</label></th>
+                        <td><textarea id="complaint" name="complaint"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th><label for="suggestion">Saran:</label></th>
+                        <td><textarea id="suggestion" name="suggestion"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><button type="submit">Kirim</button></td>
+                    </tr>
+                </table>
             </form>
-
-            <h3>Riwayat Pengaduan dan Saran</h3>
-            <table>
-                <tr>
-                    <th>Nama</th>
-                    <th>Email</th>
-                    <th>Pengaduan</th>
-                    <th>Saran</th>
-                </tr>
-                <tr>
-                    <td>Contoh Nama</td>
-                    <td>contoh@email.com</td>
-                    <td>Contoh pengaduan...</td>
-                    <td>Contoh saran...</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-</body>
-</html>

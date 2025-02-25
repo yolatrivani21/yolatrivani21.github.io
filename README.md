@@ -43,6 +43,7 @@
         <a href="#home">Home</a>
         <a href="#about">About Me</a>
         <a href="#contact">Contact Us</a>
+    </div>
     <div class="container" id="home">
         <h2>Home</h2>
         <p>Selamat Datang di Perpustakaan Yola Tri Vani! Website ini bekerja sama dengan Digilib Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik. Kami bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>

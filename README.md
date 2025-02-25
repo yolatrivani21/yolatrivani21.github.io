@@ -1,24 +1,30 @@
-<body>
-    <header>
-        <div class="container">
-            <h1>Selamat Datang di Perpustakaan Yola Tri Vani</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+<!-- index.php -->
+<?php include 'header.php'; ?>
+<style>
+    #home {
+        background-color: #f0f8ff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    #about {
+        background-color: #e6f7ff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    #contact {
+        background-color: #d9f2ff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+</style>
+<main>
     <section id="home">
-        <div class="container">
-            <h2>Home</h2>
-            <p>Website ini bekerja sama dengan Digilib Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik. Kami bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
-            <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan kami untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
-        </div>
+        <h2>Home</h2>
+        <p>Website ini bekerja sama dengan Digilab Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik.</p>
+        <a href="home.php">Masuk ke Home</a>
     </section>
+</main>
+<?php include 'footer.php'; ?>
 <p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
     <section id="about">
         <div class="container">

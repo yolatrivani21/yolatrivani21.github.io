@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -7,10 +6,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5e6cc;
             margin: 0;
             padding: 0;
             text-align: center;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #f5e6cc;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
         }
         .navbar {
             background-color: #8b5a2b;
@@ -23,18 +28,24 @@
             font-size: 18px;
         }
         .container {
-            margin: 50px;
+            margin: 50px auto;
+            width: 80%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
+    <div class="header">Perpustakaan Yola Tri Vani</div>
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
         <a href="contact.html">Contact Us</a>
     </div>
     <div class="container">
-        <h1>Perpustakaan Yola Tri Vani</h1>
+        <h2>Home</h2>
         <p>Website ini bekerja sama dengan Digilib USU untuk menyediakan sumber daya akademik terbaik.</p>
     </div>
 </body>
@@ -50,22 +61,32 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5e6cc;
             margin: 0;
             padding: 0;
             text-align: center;
+            background-color: #f9f9f9;
+        }
+        .container {
+            margin: 50px auto;
+            width: 80%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <h1>About Me</h1>
-    <p>Nama: Yola Tri Vani</p>
-    <p>NIM: 12345678</p>
-    <p>Program Studi: Ilmu Perpustakaan</p>
-    <p>Fakultas: Ilmu Budaya</p>
-    <p>Universitas: Universitas Sumatera Utara</p>
-    <p>Domisili: Medan</p>
-    <p>Email: yola@example.com</p>
+    <div class="container">
+        <h1>About Me</h1>
+        <p><strong>Nama:</strong> Yola Tri Vani</p>
+        <p><strong>NIM:</strong> 12345678</p>
+        <p><strong>Program Studi:</strong> Ilmu Perpustakaan</p>
+        <p><strong>Fakultas:</strong> Ilmu Budaya</p>
+        <p><strong>Universitas:</strong> Universitas Sumatera Utara</p>
+        <p><strong>Domisili:</strong> Medan</p>
+        <p><strong>Email:</strong> yola@example.com</p>
+    </div>
 </body>
 </html>
 
@@ -79,21 +100,31 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5e6cc;
             margin: 0;
             padding: 0;
             text-align: center;
+            background-color: #f9f9f9;
+        }
+        .container {
+            margin: 50px auto;
+            width: 80%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <h1>Contact Us</h1>
-    <form>
-        <label for="name">Nama:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="message">Pesan:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-        <button type="submit">Kirim</button>
-    </form>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
 </body>
 </html>

@@ -92,17 +92,24 @@
                 </tr>
             </table>
         </div>
-    </section>
-    </div>
     <div class="container" id="contact">
         <h2>Contact Us</h2>
         <form>
             <label for="name">Nama:</label>
             <input type="text" id="name" name="name"><br><br>
-            <label for="message">Pesan:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="name" email="name"><br><br>
+            <label for="complaint">Pengaduan:</label>
+            <input type="complaint" id="name" complaint="name"><br><br>
+            <label for="suggestion">Saran:</label>
+            <input type="suggestion" id="name" suggestion="name"><br><br>
             <button type="submit">Kirim</button>
         </form>
-    </div>
+     </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Perpustakaan Yola Tri Vani. Semua hak dilindungi.</p>
+        </div>
+    </footer>
 </body>
-</html>

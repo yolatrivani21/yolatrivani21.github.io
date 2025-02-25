@@ -7,8 +7,8 @@
     <title>Home - Perpustakaan Yola Tri Vani</title>
     <style>
         header {
-            background-color: green;
-            color: white;
+            background-color: #F5DEB3; /* Warna cream */
+            color: black;
             padding: 15px 0;
             text-align: center;
         }
@@ -51,8 +51,8 @@
     <title>About Me - Perpustakaan Yola Tri Vani</title>
     <style>
         header {
-            background-color: green;
-            color: white;
+            background-color: #F5DEB3; /* Warna cream */
+            color: black;
             padding: 15px 0;
             text-align: center;
         }
@@ -104,8 +104,8 @@
     <title>Contact Us - Perpustakaan Yola Tri Vani</title>
     <style>
         header {
-            background-color: green;
-            color: white;
+            background-color: #F5DEB3; /* Warna cream */
+            color: black;
             padding: 15px 0;
             text-align: center;
         }

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -47,17 +46,53 @@
     </div>
     <div class="container" id="home">
         <h2>Home</h2>
-        <p>Website ini bekerja sama dengan Digilib USU untuk menyediakan sumber daya akademik terbaik.</p>
+        <p>Website ini bekerja sama dengan Digilab Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik. Kami bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
+        <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan kami untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
+        <p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
     </div>
     <div class="container" id="about">
-        <h2>About Me</h2>
-        <p><strong>Nama:</strong> Yola Tri Vani</p>
-        <p><strong>NIM:</strong> 12345678</p>
-        <p><strong>Program Studi:</strong> Ilmu Perpustakaan</p>
-        <p><strong>Fakultas:</strong> Ilmu Budaya</p>
-        <p><strong>Universitas:</strong> Universitas Sumatera Utara</p>
-        <p><strong>Domisili:</strong> Medan</p>
-        <p><strong>Email:</strong> yola@example.com</p>
+                   <h2>About Me</h2>
+            <h3>Biodata</h3>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <td>Yola Tri Vani</td>
+                </tr>
+                <tr>
+                    <th>NIM</th>
+                    <td>220709056</td>
+                </tr>
+                <tr>
+                    <th>Program Studi</th>
+                    <td>Perpustakaan dan Sains Informasi</td>
+                </tr>
+                <tr>
+                    <th>Fakultas</th>
+                    <td>Ilmu Budaya</td>
+               </tr>
+                <tr>
+                    <th>Universitas</th>
+                    <td>Universitas Sumatera Utara</td>
+                </tr>
+                <tr>
+                    <th>Domisili</th>
+                    <td>Medan</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>yolatrivani21@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Telepon</th>
+                    <td>081536267845</td>
+                </tr>
+                <tr>
+                    <th>Profesi</th>
+                    <td>Pengelola Perpustakaan</td>
+                </tr>
+            </table>
+        </div>
+    </section>
     </div>
     <div class="container" id="contact">
         <h2>Contact Us</h2>

@@ -48,8 +48,6 @@
         <h2>Home</h2>
         <p>Website ini bekerja sama dengan Digilab Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik. Kami bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
      <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan kami untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
-    </div>
-    </section>
 <p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
 </body>
 </html>
@@ -78,20 +76,48 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1>About Me</h1>
-        <p><strong>Nama:</strong> Yola Tri Vani</p>
-        <p><strong>NIM:</strong> 220709056</p>
-        <p><strong>Program Studi:</strong>Perpustakaan dan Sains Informasi</p>
-        <p><strong>Fakultas:</strong> Ilmu Budaya</p>
-        <p><strong>Universitas:</strong> Universitas Sumatera Utara</p>
-        <p><strong>Domisili:</strong> Medan</p>
-        <p><strong>Email:</strong> yolatrivani21@gmail.com</p>
-    </div>
-</body>
-</html>
+            <h2>About Me</h2>
+            <h3>Biodata</h3>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <td>Yola Tri Vani</td>
+                </tr>
+                <tr>
+                    <th>NIM</th>
+                    <td>220709056</td>
+                </tr>
+                <tr>
+                    <th>Program Studi</th>
+                    <td>Perpustakaan dan Sains Informasi</td>
+                </tr>
+                <tr>
+                    <th>Fakultas</th>
+                    <td>Ilmu Budaya</td>
+               </tr>
+                <tr>
+                    <th>Universitas</th>
+                    <td>Universitas Sumatera Utara</td>
+                </tr>
+                <tr>
+                    <th>Domisili</th>
+                    <td>Medan</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>yolatrivani21@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Telepon</th>
+                    <td>081536267845</td>
+                </tr>
+                <tr>
+                    <th>Profesi</th>
+                    <td>Pengelola Perpustakaan</td>
+                </tr>
+            </table>
+        </div>
+
 
 <!-- contact.html -->
 <html lang="id">
@@ -123,12 +149,12 @@
         <form>
             <label for="name">Nama:</label>
             <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email:</label><br>
-            <textarea id="email" name=email" rows="4" cols="50"></textarea><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="name" email="name"><br><br>
             <label for="Complaint">Pengaduan:</label>
             <input type="complaint" id="name" complaint="name"><br><br>
-             <label for="suggestion">Saran:</label><br>
-            <textarea id="suggestion" name=suggestion" rows="4" cols="50"></textarea><br><br>
+             <label for="suggestion">Saran:</label>
+            <input type="suggestion" id="name" suggestion="name"><br><br>
             <button type="submit">Kirim</button>
         </form>
     </div>

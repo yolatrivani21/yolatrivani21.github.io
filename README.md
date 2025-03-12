@@ -1,103 +1,102 @@
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Yola Tri Vani</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f9f9f9;
-        }
-        .header {
-            background-color: #f5e6cc;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .navbar {
-            background-color: #8b5a2b;
-            padding: 15px;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-        .container {
-            margin: 50px auto;
-            width: 80%;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-</head>
 <body>
-    <div class="header">Perpustakaan Yola Tri Vani</div>
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#contact">Contact Us</a>
-    </div>
-    <div class="container" id="home">
-        <h2>Home</h2>
-        <p>Selamat Datang di Perpustakaan Yola Tri Vani!</p>
-    </div>
-    <div class="container" id="about">
-        <h2>About Me</h2>
-        <p>Nama: Yola Tri Vani</p>
-    </div>
-    <div class="container" id="contact">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="complaint">Pengaduan:</label>
-            <input type="text" id="complaint" name="complaint" required><br><br>
-            <label for="suggestion">Saran:</label>
-            <input type="text" id="suggestion" name="suggestion" required><br><br>
-            <button type="submit">Kirim</button>
-        </form>
-    </div>
+    <header>
+        <div class="container">
+            <h1>Selamat Datang di Perpustakaan Yola Tri Vani</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Home</h2>
+            <p>Website ini bekerja sama dengan Digilab Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik. Kami bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
+            <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan kami untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
+        </div>
+    </section>
+<p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <h3>Biodata</h3>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <td>Yola Tri Vani</td>
+                </tr>
+                <tr>
+                    <th>NIM</th>
+                    <td>220709056</td>
+                </tr>
+                <tr>
+                    <th>Program Studi</th>
+                    <td>Perpustakaan dan Sains Informasi</td>
+                </tr>
+                <tr>
+                    <th>Fakultas</th>
+                    <td>Ilmu Budaya</td>
+               </tr>
+                <tr>
+                    <th>Universitas</th>
+                    <td>Universitas Sumatera Utara</td>
+                </tr>
+                <tr>
+                    <th>Domisili</th>
+                    <td>Medan</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>yolatrivani21@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Telepon</th>
+                    <td>081536267845</td>
+                </tr>
+                <tr>
+                    <th>Profesi</th>
+                    <td>Pengelola Perpustakaan</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+  <section id="contact">
+        <div class="container">
+            <h2>Formulir Pengaduan dan Saran</h2>
+            <p>Silakan isi formulir di bawah ini untuk memberikan pengaduan atau saran:</p>
+            <form action="#" method="POST">
+                <table>
+                    <tr>
+                        <th><label for="name">Nama Lengkap:</label></th>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">Email:</label></th>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="complaint">Pengaduan:</label></th>
+                        <td><textarea id="complaint" name="complaint"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th><label for="suggestion">Saran:</label></th>
+                        <td><textarea id="suggestion" name="suggestion"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><button type="submit">Kirim</button></td>
+                    </tr>
+                </table>
+            </form>
+             </div>
+    </section>
     <footer>
         <div class="container">
             <p>&copy; 2025 Perpustakaan Yola Tri Vani. Semua hak dilindungi.</p>
         </div>
     </footer>
-    <script>
-        // Smooth Scroll
-        document.querySelectorAll('.navbar a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Form Validation
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            let name = document.getElementById("name").value.trim();
-            let email = document.getElementById("email").value.trim();
-            let complaint = document.getElementById("complaint").value.trim();
-            let suggestion = document.getElementById("suggestion").value.trim();
-            
-            if (name === "" || email === "" || complaint === "" || suggestion === "") {
-                alert("Harap isi semua kolom!");
-            } else {
-                alert("Terima kasih atas masukan Anda!");
-                this.reset();
-            }
-        });
-    </script>
 </body>
-</html>

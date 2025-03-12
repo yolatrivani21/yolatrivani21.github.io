@@ -114,7 +114,7 @@
     <div class="container" id="contact">
         <h2>Formulir Pengaduan dan Saran</h2>
         <p>Silakan isi formulir di bawah ini untuk memberikan pengaduan atau saran:</p>
-        <form action="#" method="POST">
+        <form id="contactForm">
             <table>
                 <tr><th><label for="name">Nama Lengkap:</label></th><td><input type="text" id="name" name="name" required></td></tr>
                 <tr><th><label for="email">Email:</label></th><td><input type="email" id="email" name="email" required></td></tr>
@@ -129,5 +129,20 @@
             <p>&copy; 2025 Perpustakaan Yola Tri Vani. Semua hak dilindungi.</p>
         </div>
     </footer>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let complaint = document.getElementById("complaint").value;
+            let suggestion = document.getElementById("suggestion").value;
+            if (name === "" || email === "") {
+                alert("Nama dan Email wajib diisi!");
+                return;
+            }
+            alert("Terima kasih " + name + "! Pengaduan atau saran Anda telah dikirim.");
+            document.getElementById("contactForm").reset();
+        });
+    </script>
 </body>
 </html>

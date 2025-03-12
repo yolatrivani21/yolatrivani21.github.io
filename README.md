@@ -26,6 +26,7 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
+            cursor: pointer;
         }
         .container {
             margin: 50px auto;
@@ -46,69 +47,57 @@
     </div>
     <div class="container" id="home">
         <h2>Home</h2>
-        <p>Selamat Datang di Perpustakaan Yola Tri Vani! Website ini bekerja sama dengan Digilib Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik. Kami bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
-        <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan kami untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
-        <p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
+        <p>Selamat Datang di Perpustakaan Yola Tri Vani!</p>
     </div>
     <div class="container" id="about">
-                   <h2>About Me</h2>
-            <h3>Biodata</h3>
-            <table>
-                <tr>
-                    <th>Nama</th>
-                    <td>Yola Tri Vani</td>
-                </tr>
-                <tr>
-                    <th>NIM</th>
-                    <td>220709056</td>
-                </tr>
-                <tr>
-                    <th>Program Studi</th>
-                    <td>Perpustakaan dan Sains Informasi</td>
-                </tr>
-                <tr>
-                    <th>Fakultas</th>
-                    <td>Ilmu Budaya</td>
-               </tr>
-                <tr>
-                    <th>Universitas</th>
-                    <td>Universitas Sumatera Utara</td>
-                </tr>
-                <tr>
-                    <th>Domisili</th>
-                    <td>Medan</td>
-                </tr>
-                <tr>
-                    <th>Email</th>
-                    <td>yolatrivani21@gmail.com</td>
-                </tr>
-                <tr>
-                    <th>Telepon</th>
-                    <td>081536267845</td>
-                </tr>
-                <tr>
-                    <th>Profesi</th>
-                    <td>Pengelola Perpustakaan</td>
-                </tr>
-            </table>
-        </div>
+        <h2>About Me</h2>
+        <p>Nama: Yola Tri Vani</p>
+    </div>
     <div class="container" id="contact">
-    <h2>Contact Us</h2>
-    <form>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
             <label for="name">Nama:</label>
-            <input type="text" id="name" name="name"><br><br>
+            <input type="text" id="name" name="name" required><br><br>
             <label for="email">Email:</label>
-            <input type="email" id="name" email="name"><br><br>
+            <input type="email" id="email" name="email" required><br><br>
             <label for="complaint">Pengaduan:</label>
-            <input type="complaint" id="name" complaint="name"><br><br>
+            <input type="text" id="complaint" name="complaint" required><br><br>
             <label for="suggestion">Saran:</label>
-            <input type="suggestion" id="name" suggestion="name"><br><br>
+            <input type="text" id="suggestion" name="suggestion" required><br><br>
             <button type="submit">Kirim</button>
-     </form>
-     </div>
+        </form>
+    </div>
     <footer>
         <div class="container">
             <p>&copy; 2025 Perpustakaan Yola Tri Vani. Semua hak dilindungi.</p>
         </div>
     </footer>
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form Validation
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let complaint = document.getElementById("complaint").value.trim();
+            let suggestion = document.getElementById("suggestion").value.trim();
+            
+            if (name === "" || email === "" || complaint === "" || suggestion === "") {
+                alert("Harap isi semua kolom!");
+            } else {
+                alert("Terima kasih atas masukan Anda!");
+                this.reset();
+            }
+        });
+    </script>
 </body>
+</html>

@@ -105,7 +105,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>Selamat Datang di Perpustakaan Yola Tri Vani</h1>
+            <h1>Perpustakaan Yola Tri Vani</h1>
             <nav class="navbar">
                 <a onclick="showSlide('home')">Home</a>
                 <a onclick="showSlide('about')">About Me</a>
@@ -115,7 +115,7 @@
     </header>
 
     <div class="slide active" id="home">
-        <h2>Home</h2>
+        <h2>Selamat Datang di Perpustakaan Yola Tri Vani!</h2>
         <p>Website ini bekerja sama dengan Digilab Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik. Kami bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
         <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan kami untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
         <p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
@@ -123,7 +123,7 @@
 
     <div class="slide" id="about">
         <h2>About Me</h2>
-        <h3>Biodata</h3>
+        <h3>Halaman ini berisi tentang saya</h3>
         <table>
             <tr>
                 <th>Nama</th>

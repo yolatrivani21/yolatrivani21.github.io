@@ -99,6 +99,22 @@
             padding: 10px;
             margin-top: 20px;
         }
+        .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
     </style>
 </head>
 
@@ -115,7 +131,7 @@
     </header>
 
     <div class="slide active" id="home">
-        <h2>Selamat Datang di Perpustakaan Yola Tri Vani!</h2>
+         <h2><span class="marquee">Selamat Datang di Perpustakaan Yola Tri Vani!</span></h2>
         <p>Website ini bekerja sama dengan Digilib Kampus Universitas Sumatera Utara (USU) untuk menyediakan akses ke berbagai koleksi buku digital dan fisik. Website ini bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
         <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan ini untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
         <p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>

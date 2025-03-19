@@ -10,23 +10,23 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: #f9f9f9;
+            background-color: #f0f8ff; /* biru muda sangat terang */
             color: #333;
         }
 
         header {
-            background-color: #002147;
-            color: white;
+            background-color: #add8e6; /* biru muda */
+            color: #333;
             padding: 20px;
         }
 
         .navbar {
-            background-color: #003366;
+            background-color: #87cefa; /* biru langit */
             padding: 15px;
         }
 
         .navbar a {
-            color: white;
+            color: #333;
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
@@ -50,7 +50,7 @@
         h1,
         h2,
         h3 {
-            color: #002147;
+            color: #1e90ff; /* biru dodger */
         }
 
         table {
@@ -61,14 +61,14 @@
 
         th,
         td {
-            border: 1px solid #ddd;
+            border: 1px solid #ccc;
             padding: 10px;
             text-align: left;
         }
 
         th {
-            background-color: #00509e;
-            color: white;
+            background-color: #add8e6; /* biru muda */
+            color: #333;
         }
 
         input,
@@ -76,28 +76,45 @@
             width: 100%;
             padding: 8px;
             margin: 5px 0;
-            border: 1px solid #ccc;
+            border: 1px solid #add8e6;
             border-radius: 5px;
         }
 
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border: 1px solid #1e90ff;
+            box-shadow: 0 0 5px #1e90ff;
+        }
+
         button {
-            background-color: #002147;
-            color: white;
+            background-color: #87cefa; /* biru langit */
+            color: #333;
             padding: 10px 15px;
             border: none;
             cursor: pointer;
             border-radius: 5px;
+            transition: 0.3s;
         }
 
         button:hover {
-            background-color: #003366;
+            background-color: #1e90ff; /* biru dodger saat hover */
+            color: white;
         }
 
         footer {
-            background-color: #002147;
-            color: white;
+            background-color: #add8e6; /* biru muda */
+            color: #333;
             padding: 10px;
             margin-top: 20px;
+        }
+
+        a {
+            color: #1e90ff;
+        }
+
+        a:hover {
+            color: #4682b4;
         }
     </style>
 </head>

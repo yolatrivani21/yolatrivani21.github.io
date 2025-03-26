@@ -191,8 +191,6 @@
         <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan ini untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
         <p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
     </div>
-<p>Website ini menyediakan akses ke berbagai koleksi buku.</p>
-    
     <h2>Pameran Buku</h2>
     <div id="book-gallery"></div>
 </div>
@@ -200,10 +198,11 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const books = [
-           { title: "Sastra Nusantara", img: "https://example.com/sastra-nusantara.jpg", desc: "Koleksi sastra dari berbagai daerah." }
-           { title: "Sastra Nusantara", img: "https://example.com/sastra-nusantara.jpg", desc: "Koleksi sastra dari berbagai daerah." }
-            { title: "Sastra Nusantara", img: "https://example.com/sastra-nusantara.jpg", desc: "Koleksi sastra dari berbagai daerah." }
+            { title: "Sastra Nusantara", img: "book1.jpg", desc: "Koleksi sastra dari berbagai daerah." },
+            { title: "Teknologi Informasi", img: "book2.jpg", desc: "Perkembangan teknologi dan informasi terkini." },
+            { title: "Ensiklopedia Dunia", img: "book3.jpg", desc: "Berbagai pengetahuan umum dalam satu buku." }
         ];
+
         const gallery = document.getElementById("book-gallery");
         books.forEach(book => {
             let bookDiv = document.createElement("div");

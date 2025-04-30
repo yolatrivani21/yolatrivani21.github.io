@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -112,10 +111,8 @@
 
         .book-animation {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
             overflow: hidden;
             pointer-events: none;
         }
@@ -167,79 +164,127 @@
 </head>
 
 <body>
-<header>
-    <div class="container">
-        <h1>📚 Perpustakaan Yola Tri Vani 📚</h1>
-        <nav class="navbar">
-            <a onclick="showSlide('home')">🏠 Homepage</a>
-            <a onclick="showSlide('about')">👩‍💼 About Us</a>
-            <a onclick="showSlide('contact')">📝 Contact Us</a>
-            <a onclick="showSlide('hello')">👋 Hello World</a>
-            <a onclick="showSlide('dosen')">📄 Data Dosen</a>
-        </nav>
+    <header>
+        <div class="container">
+            <h1>📚 Perpustakaan Yola Tri Vani 📚</h1>
+            <nav class="navbar">
+                <a onclick="showSlide('home')">🏠 Homepage</a>
+                <a onclick="showSlide('about')">👩‍💼 About Us</a>
+                <a onclick="showSlide('contact')">📝 Contact Us</a>
+                <a onclick="showSlide('hello')">🌐 Hello World</a>
+                <a onclick="showSlide('dosen')">👨‍🏫 Data Dosen</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="slide active" id="home">
+        <div class="book-animation">
+            <div class="book"></div><div class="book"></div><div class="book"></div>
+            <div class="book"></div><div class="book"></div><div class="book"></div>
+        </div>
+        <h2><span class="marquee">Selamat Datang di Perpustakaan Yola Tri Vani!</span></h2>
+        <p>Website ini adalah kolaborasi dengan Digilib USU untuk akses buku digital dan fisik.</p>
+        <p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
+        <h2>Pameran Buku</h2>
+        <div id="book-gallery"></div>
     </div>
-</header>
-<div class="slide active" id="home">
-    <div class="book-animation">
-        <div class="book"></div><div class="book"></div><div class="book"></div><div class="book"></div><div class="book"></div><div class="book"></div>
+
+    <div class="slide" id="about">
+        <h2>About Me</h2>
+        <table>
+            <tr><th>Nama</th><td>Yola Tri Vani</td></tr>
+            <tr><th>NIM</th><td>220709056</td></tr>
+            <tr><th>Program Studi</th><td>Perpustakaan dan Sains Informasi</td></tr>
+            <tr><th>Fakultas</th><td>Ilmu Budaya</td></tr>
+            <tr><th>Universitas</th><td>Universitas Sumatera Utara</td></tr>
+            <tr><th>Domisili</th><td>Medan</td></tr>
+            <tr><th>Email</th><td>yolatrivani21@gmail.com</td></tr>
+            <tr><th>Telepon</th><td>081536267845</td></tr>
+        </table>
     </div>
-    <h2><span class="marquee">Selamat Datang di Perpustakaan Yola Tri Vani!</span></h2>
-    <p>Halo! Saya Yola Tri Vani, Mahasiswa Program Studi Perpustakaan dan Sains Informasi...</p>
-    <p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
-    <h2>Pameran Buku</h2>
-    <div id="book-gallery"></div>
-</div>
 
-<div class="slide" id="about">
-    <h2>About Me</h2>
-    <table>... (isi biodata)</table>
-</div>
+    <div class="slide" id="contact">
+        <h2>Formulir Pengaduan dan Saran</h2>
+        <form id="contactForm">
+            <table>
+                <tr><th>Nama:</th><td><input type="text" id="name" required></td></tr>
+                <tr><th>Email:</th><td><input type="email" id="email" required></td></tr>
+                <tr><th>Pengaduan:</th><td><textarea id="complaint"></textarea></td></tr>
+                <tr><th>Saran:</th><td><textarea id="suggestion"></textarea></td></tr>
+                <tr><td colspan="2" style="text-align:center;"><button type="submit">Kirim</button></td></tr>
+            </table>
+        </form>
+    </div>
 
-<div class="slide" id="contact">
-    <h2>Formulir Pengaduan dan Saran</h2>
-    <form id="contactForm">... (formulir saran)</form>
-</div>
+    <div class="slide" id="hello">
+        <h2>Hello World</h2>
+        <p>Ini adalah halaman Hello World pertama saya!</p>
+        <h3>Contoh Tabel</h3>
+        <table>
+            <tr><th>Nama</th><th>Usia</th><th>Kota</th></tr>
+            <tr><td>Andi</td><td>25</td><td>Medan</td></tr>
+            <tr><td>Budi</td><td>30</td><td>Jakarta</td></tr>
+        </table>
+        <h3>Contoh Link</h3>
+        <p>Klik <a href="https://usu.ac.id/" target="_blank">di sini</a> untuk ke situs Universitas Sumatera Utara.</p>
+    </div>
 
-<div class="slide" id="hello">
-    <h2>Hello World</h2>
-    <p>Ini adalah halaman Hello World pertama saya!</p>
-    <h3>Contoh Tabel</h3>
-    <table>...(isi tabel)</table>
-    <h3>Contoh Link</h3>
-    <p><a href="https://usu.ac.id/" target="_blank">Kunjungi situs USU</a></p>
-</div>
+    <div class="slide" id="dosen">
+        <h2>Formulir Data Dosen</h2>
+        <form action="simpan_dosen.php" method="post">
+            <table>
+                <tr><th>Nama Dosen:</th><td><input type="text" name="nama_dosen" required></td></tr>
+                <tr><th>NIDN:</th><td><input type="text" name="nidn" required></td></tr>
+                <tr><th>Program Studi:</th><td><input type="text" name="prodi" required></td></tr>
+                <tr><td colspan="2" style="text-align:center;"><button type="submit">Simpan</button></td></tr>
+            </table>
+        </form>
+    </div>
 
-<div class="slide" id="dosen">
-    <h2>Formulir Data Dosen</h2>
-    <form action="simpan_dosen.php" method="post">...(form dosen)</form>
-</div>
-
-<footer>
-    <div class="container">
+    <footer>
         <p>&copy; 2025 Perpustakaan Yola Tri Vani</p>
-    </div>
-</footer>
+    </footer>
 
-<script>
-    function showSlide(id) {
-        document.querySelectorAll('.slide').forEach(slide => slide.classList.remove('active'));
-        document.getElementById(id).classList.add('active');
-    }
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-        alert("Terima kasih atas masukan Anda!");
-        this.reset();
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-        const books = [...]; // Daftar buku
-        const gallery = document.getElementById("book-gallery");
-        books.forEach(book => {
-            let div = document.createElement("div");
-            div.classList.add("book-item");
-            div.innerHTML = `...`;
-            gallery.appendChild(div);
+    <script>
+        function showSlide(id) {
+            let slides = document.querySelectorAll('.slide');
+            slides.forEach(slide => slide.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            if (!name || !email) {
+                alert("Nama dan Email wajib diisi!");
+                return;
+            }
+            alert("Terima kasih " + name + "! Masukan Anda telah dikirim.");
+            this.reset();
         });
-    });
-</script>
+
+        // Isi pameran buku
+        document.addEventListener("DOMContentLoaded", function () {
+            const books = [
+                { title: "Sastra Nusantara", img: "book1.jpg", desc: "Koleksi sastra dari berbagai daerah." },
+                { title: "Teknologi Informasi", img: "book2.jpg", desc: "Perkembangan teknologi dan informasi terkini." },
+                { title: "Ensiklopedia Dunia", img: "book3.jpg", desc: "Berbagai pengetahuan umum dalam satu buku." }
+            ];
+
+            const gallery = document.getElementById("book-gallery");
+            books.forEach(book => {
+                let div = document.createElement("div");
+                div.classList.add("book-item");
+                div.innerHTML = `
+                    <img src="${book.img}" alt="${book.title}" width="120" height="180">
+                    <h3>${book.title}</h3>
+                    <p>${book.desc}</p>
+                    <button onclick="alert('Detail: ${book.desc}')">Detail</button>
+                `;
+                gallery.appendChild(div);
+            });
+        });
+    </script>
 </body>
 </html>

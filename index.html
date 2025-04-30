@@ -208,14 +208,24 @@
         <h2>Formulir Pengaduan dan Saran</h2>
         <form id="contactForm">
             <table>
-                <tr><th>Nama:</th><td><input type="text" id="name" required></td></tr>
-                <td><input type="text" id="name" name="name" required placeholder="Masukkan nama Anda"></td>
-                <tr><th>Email:</th><td><input type="email" id="email" required></td></tr>
-                <td><input type="email" id="email" name="email" required placeholder="Masukkan email Anda"></td>
-                <tr><th>Pengaduan:</th><td><textarea id="complaint"></textarea></td></tr>
-                <td><textarea id="complaint" name="complaint"placeholder="Tulis pengaduan Anda"></textarea></td>
-                <tr><th>Saran:</th><td><textarea id="suggestion"></textarea></td></tr>
-                <td><textarea id="suggestion" name="suggestion"placeholder="Tulis saran Anda"></textarea></td>
+               <table>
+                <tr>
+                    <th><label for="name">Nama Lengkap:</label></th>
+                    <td><input type="text" id="name" name="name" required placeholder="Masukkan nama Anda"></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email:</label></th>
+                    <td><input type="email" id="email" name="email" required placeholder="Masukkan email Anda"></td>
+                </tr>
+                <tr>
+                    <th><label for="complaint">Pengaduan:</label></th>
+                    <td><textarea id="complaint" name="complaint"placeholder="Tulis pengaduan Anda"></textarea></td>
+                </tr>
+                <tr>
+                    <th><label for="suggestion">Saran:</label></th>
+                    <td><textarea id="suggestion" name="suggestion"placeholder="Tulis saran Anda"></textarea></td>
+                </tr>
+                <tr>
                 <tr><td colspan="2" style="text-align:center;"><button type="submit">Kirim</button></td></tr>
             </table>
         </form>

@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html<html lang="id">
 
 <head>
     <meta charset="UTF-8">
@@ -36,8 +35,6 @@
 
         .slide {
             display: none;
-            opacity: 0;
-            transition: opacity 0.5s ease;
             margin: 50px auto;
             width: 80%;
             background: white;
@@ -48,7 +45,6 @@
 
         .active {
             display: block;
-            opacity: 1;
         }
 
         h1, h2, h3 {
@@ -187,7 +183,7 @@
             <div class="book"></div><div class="book"></div><div class="book"></div>
         </div>
         <h2><span class="marquee">Selamat Datang di Perpustakaan Yola Tri Vani!</span></h2>
-        <p>Halo! Saya Yola Tri Vani, Mahasiswa Program Studi Perpustakaan dan Sains Informasi. Website ini merupakan hasil kolaborasi dengan Digital Library (Digilib) Universitas Sumatera Utara (USU) dalam menyediakan akses ke beragam koleksi buku, baik dalam format digital maupun fisik. Website ini bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
+       <p>Halo! Saya Yola Tri Vani, Mahasiswa Program Studi Perpustakaan dan Sains Informasi. Website ini merupakan hasil kolaborasi dengan Digital Library (Digilib) Universitas Sumatera Utara (USU) dalam menyediakan akses ke beragam koleksi buku, baik dalam format digital maupun fisik. Website ini bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
         <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan ini untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
         <p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
         <h2>Pameran Buku</h2>
@@ -198,48 +194,23 @@
         <h2>About Me</h2>
         <p>Halaman ini berisi tentang saya</p>
         <table>
-        <tr>
-            <th>Nama</th>
-            <td>Yola Tri Vani</td>
-        </tr>
-        <tr>
-            <th>NIM</th>
-            <td>220709056</td>
-        </tr>
-        <tr>
-            <th>Program Studi</th>
-            <td>Perpustakaan dan Sains Informasi</td>
-        </tr>
-        <tr>
-            <th>Fakultas</th>
-            <td>Ilmu Budaya</td>
-        </tr>
-        <tr>
-            <th>Universitas</th>
-            <td>Universitas Sumatera Utara</td>
-        </tr>
-        <tr>
-            <th>Domisili</th>
-            <td>Medan</td>
-        </tr>
-        <tr>
-            <th>Email</th>
-            <td>yolatrivani21@gmail.com</td>
-        </tr>
-        <tr>
-            <th>Telepon</th>
-            <td>081536267845</td>
-        </tr>
+            <tr><th>Nama</th><td>Yola Tri Vani</td></tr>
+            <tr><th>NIM</th><td>220709056</td></tr>
+            <tr><th>Program Studi</th><td>Perpustakaan dan Sains Informasi</td></tr>
+            <tr><th>Fakultas</th><td>Ilmu Budaya</td></tr>
+            <tr><th>Universitas</th><td>Universitas Sumatera Utara</td></tr>
+            <tr><th>Domisili</th><td>Medan</td></tr>
+            <tr><th>Email</th><td>yolatrivani21@gmail.com</td></tr>
+            <tr><th>Telepon</th><td>081536267845</td></tr>
         </table>
     </div>
 
-
     <div class="slide" id="contact">
         <h2>Formulir Pengaduan dan Saran</h2>
-        <p>Kami menghargai setiap masukan Anda!</p>
         <p>Silakan isi formulir di bawah ini untuk menyampaikan pengaduan atau saran terkait layanan perpustakaan kami. Setiap masukan yang Anda berikan sangat berarti bagi kami dalam meningkatkan kualitas pelayanan dan kenyamanan pengguna.</p>
         <form id="contactForm">
             <table>
+               <table>
                 <tr>
                     <th><label for="name">Nama Lengkap:</label></th>
                     <td><input type="text" id="name" name="name" required placeholder="Masukkan nama Anda"></td>
@@ -257,8 +228,7 @@
                     <td><textarea id="suggestion" name="suggestion"placeholder="Tulis saran Anda"></textarea></td>
                 </tr>
                 <tr>
-                    <td colspan="2" style="text-align: center;"><button type="submit">Kirim</button></td>
-                </tr>
+                <tr><td colspan="2" style="text-align:center;"><button type="submit">Kirim</button></td></tr>
             </table>
         </form>
     </div>
@@ -266,6 +236,14 @@
     <div class="slide" id="hello">
         <h2>Hello World</h2>
         <p>Ini adalah halaman Hello World pertama saya!</p>
+        <h3>Tabel</h3>
+        <table>
+            <tr><th>Nama</th><th>Usia</th><th>Kota</th></tr>
+            <tr><td>Andi</td><td>25</td><td>Medan</td></tr>
+            <tr><td>Budi</td><td>30</td><td>Jakarta</td></tr>
+        </table>
+        <h3>Link</h3>
+        <p>Klik <a href="https://usu.ac.id/" target="_blank">di sini</a> untuk ke situs Universitas Sumatera Utara.</p>
     </div>
 
     <div class="slide" id="dosen">
@@ -285,21 +263,11 @@
     </footer>
 
     <script>
-        let slides = document.querySelectorAll('.slide');
-        let currentIndex = 0;
-
         function showSlide(id) {
+            let slides = document.querySelectorAll('.slide');
             slides.forEach(slide => slide.classList.remove('active'));
-            let target = document.getElementById(id);
-            target.classList.add('active');
-            currentIndex = Array.from(slides).indexOf(target);
+            document.getElementById(id).classList.add('active');
         }
-
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % slides.length;
-            slides.forEach(slide => slide.classList.remove('active'));
-            slides[currentIndex].classList.add('active');
-        }, 5000);
 
         document.getElementById("contactForm").addEventListener("submit", function (event) {
             event.preventDefault();
@@ -313,12 +281,14 @@
             this.reset();
         });
 
+        // Isi pameran buku
         document.addEventListener("DOMContentLoaded", function () {
             const books = [
                 { title: "Sastra Nusantara", img: "book1.jpg", desc: "Koleksi sastra dari berbagai daerah." },
                 { title: "Teknologi Informasi", img: "book2.jpg", desc: "Perkembangan teknologi dan informasi terkini." },
                 { title: "Ensiklopedia Dunia", img: "book3.jpg", desc: "Berbagai pengetahuan umum dalam satu buku." }
             ];
+
             const gallery = document.getElementById("book-gallery");
             books.forEach(book => {
                 let div = document.createElement("div");

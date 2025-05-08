@@ -195,9 +195,10 @@
             <div class="book"></div>
         </div>
         <h2><span class="marquee">Selamat Datang di Perpustakaan Yola Tri Vani!</span></h2>
-        <p>Halo! Saya Yola Tri Vani, Mahasiswa Program Studi Perpustakaan dan Sains Informasi...</p>
+        <p>Halo! Saya Yola Tri Vani, Mahasiswa Program Studi Perpustakaan dan Sains Informasi. Website ini merupakan hasil kolaborasi dengan Digital Library (Digilib) Universitas Sumatera Utara (USU) dalam menyediakan akses ke beragam koleksi buku, baik dalam format digital maupun fisik. Website ini bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
+        <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan ini untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
         <p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
-
+        <input type="text" id="searchInput" class="search-box" placeholder="🔍 Cari judul buku..." onkeyup="filterBooks()">            
         <h2>📘 Daftar Koleksi Buku</h2>
         <div class="book-grid">
             <div class="book-card">
@@ -243,14 +244,30 @@
 
     <div class="slide" id="contact">
         <h2>Formulir Pengaduan dan Saran</h2>
+        <p>Kami menghargai setiap masukan Anda!</p>
+        <p>Silakan isi formulir di bawah ini untuk menyampaikan pengaduan atau saran terkait layanan perpustakaan kami. Setiap masukan yang Anda berikan sangat berarti bagi kami dalam meningkatkan kualitas pelayanan dan kenyamanan pengguna.</p>
         <form id="contactForm">
             <table>
-                <tr><th><label for="name">Nama Lengkap:</label></th><td><input type="text" id="name" name="name" required></td></tr>
-                <tr><th><label for="email">Email:</label></th><td><input type="email" id="email" name="email" required></td></tr>
-                <tr><th><label for="complaint">Pengaduan:</label></th><td><textarea id="complaint" name="complaint"></textarea></td></tr>
-                <tr><th><label for="suggestion">Saran:</label></th><td><textarea id="suggestion" name="suggestion"></textarea></td></tr>
-                <tr><td colspan="2" style="text-align: center;"><button type="submit">Kirim</button></td></tr>
-            </table>
+            <tr>
+                <th><label for="name">Nama Lengkap:</label></th>
+                <td><input type="text" id="name" name="name" required placeholder="Masukkan nama Anda"></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email:</label></th>
+                <td><input type="email" id="email" name="email" required placeholder="Masukkan email Anda"></td>
+            </tr>
+            <tr>
+                <th><label for="complaint">Pengaduan:</label></th>
+                <td><textarea id="complaint" name="complaint"placeholder="Tulis pengaduan Anda"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="suggestion">Saran:</label></th>
+                <td><textarea id="suggestion" name="suggestion"placeholder="Tulis saran Anda"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><button type="submit">Kirim</button></td>
+            </tr>
+        </table>
         </form>
     </div>
 

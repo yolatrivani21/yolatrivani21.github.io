@@ -190,12 +190,12 @@
         <p>Halo! Saya Yola Tri Vani, Mahasiswa Program Studi Perpustakaan dan Sains Informasi. Website ini merupakan hasil kolaborasi dengan Digital Library (Digilib) Universitas Sumatera Utara (USU) dalam menyediakan akses ke beragam koleksi buku, baik dalam format digital maupun fisik. Website ini bertujuan untuk meningkatkan literasi masyarakat melalui koleksi-koleksi buku yang dapat diakses dengan mudah.</p>
         <p>Anda dapat menjadi anggota dan memanfaatkan fasilitas perpustakaan ini untuk mengakses buku dan berbagai sumber daya pendidikan lainnya.</p>
         <p><a href="https://library.usu.ac.id/" target="_blank">Kunjungi Perpustakaan USU</a></p>
+        <input type="text" id="searchInput" class="search-box" placeholder="🔍 Cari judul buku..." onkeyup="filterBooks()">
 <!-- Pameran Buku -->
     <h2>Pameran Buku</h2>
     <div id="book-gallery"></div>
 </div>
 
-<script>
     <h2>📘 Daftar Koleksi Buku</h2>
 <div class="book-grid">
   <div class="book-card">
@@ -222,7 +222,6 @@
     <a href="https://fliphtml5.com/lafpb/qxtl/Listen_to_My_Heartbeat_-_Arumi_E/" target="_blank" onclick="alertToEbook()">📥 Baca eBook</a>
   </div>
 </div>
-</script>
 
 <style>
    .book-grid {
@@ -333,7 +332,9 @@
             });
             document.getElementById(id).classList.add('active');
         }
-
+        function alertToEbook() {
+    alert("Anda akan diarahkan ke halaman eBook.");
+        }
         document.getElementById("contactForm").addEventListener("submit", function (event) {
             event.preventDefault();
             let name = document.getElementById("name").value;

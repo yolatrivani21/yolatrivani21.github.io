@@ -170,8 +170,8 @@
         .book-card .book-title {
             font-weight: bold;
             margin: 10px 0 5px;
-        }
-        .cookie-popup {
+}
+    .cookie-popup {
     position: fixed;
     bottom: 30px;
     left: 50%;
@@ -191,7 +191,6 @@
     display: none;
     animation: fadeInUp 1s ease-out;
 }
-
 .cookie-popup button {
     margin: 10px 5px;
     padding: 10px 20px;
@@ -202,26 +201,13 @@
     background: #3cb371;
     color: white;
 }
-
 .cookie-popup button:hover {
     background: #2e8b57;
 }
-
 .cookie-icon {
     font-size: 40px;
     display: block;
     margin-bottom: 10px;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translate(-50%, 30px);
-    }
-    to {
-        opacity: 1;
-        transform: translate(-50%, 0);
-    }
 }
     </style>
 </head>
@@ -277,9 +263,9 @@
                 <a href="https://drive.google.com/file/d/12Me18U4YvyWgZ9JM515b75x2GhGAkuMU/view" onclick="alertToEbook()">📥 Baca eBook</a>
             </div>
         </div>
-      <div id="cookiePopup" class="cookie-popup">
+     <div id="cookiePopup" class="cookie-popup">
     <div class="cookie-content">
-        <span class="cookie-icon"></span>
+        <span class="cookie-icon">🍪</span>
         <p>Website ini menggunakan cookie untuk meningkatkan pengalaman Anda. Apakah Anda menyetujui?</p>
         <button onclick="acceptCookies()">Ya, saya setuju</button>
         <button onclick="declineCookies()">Tidak</button>
@@ -367,44 +353,46 @@
             alert("Terima kasih " + name + "! Pengaduan atau saran Anda telah dikirim.");
             document.getElementById("contactForm").reset();
         });
-            function setCookie(name, value, days) {
-            let expires = "";
-            if (days) {
-                let date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                expires = "; expires=" + date.toUTCString();
-            }
-            document.cookie = name + "=" + (value || "") + expires + "; path=/";
-        }
+            <script>
+    const popSound = new Audio("https://cdn.pixabay.com/download/audio/2022/03/15/audio_643d51051d.mp3?filename=pop-94319.mp3");
 
-        function getCookie(name) {
-            let nameEQ = name + "=";
-            let ca = document.cookie.split(';');
-            for (let i = 0; i < ca.length; i++) {
-                let c = ca[i];
-                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-            }
-            return null;
+    function setCookie(name, value, days) {
+        let expires = "";
+        if (days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
         }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
 
-        function acceptCookies() {
-            setCookie("cookieAccepted", "true", 30);
-            document.getElementById("cookiePopup").style.display = "none";
-            alert("Terima kasih telah menerima cookie. Selamat datang di Perpustakaan Yola Tri Vani! 📚");
+    function getCookie(name) {
+        const nameEQ = name + "=";
+        const ca = document.cookie.split(';');
+        for(let i=0;i < ca.length;i++) {
+            let c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
         }
+        return null;
+    }
 
-        function declineCookies() {
-            setCookie("cookieAccepted", "false", 30);
-            document.getElementById("cookiePopup").style.display = "none";
-            alert("Anda menolak cookie. Beberapa fitur mungkin terbatas.");
+    function acceptCookies() {
+        setCookie("cookieAccepted", "true", 365);
+        document.getElementById("cookiePopup").classList.remove("show");
+    }
+
+    function declineCookies() {
+        document.getElementById("cookiePopup").classList.remove("show");
+    }
+
+    window.onload = function () {
+        if (!getCookie("cookieAccepted")) {
+            const popup = document.getElementById("cookiePopup");
+            popup.classList.add("show");
+            popSound.play();
         }
-
-        window.onload = function () {
-            if (!getCookie("cookieAccepted")) {
-                document.getElementById("cookiePopup").style.display = "block";
-            }
-        };
+    };
     </script>
 </body>
 

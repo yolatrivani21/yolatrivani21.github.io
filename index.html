@@ -175,11 +175,6 @@
 </head>
 
 <body>
-<div id="cookiePopup">
-        <p>Website ini menggunakan cookie untuk meningkatkan pengalaman Anda. Apakah Anda menyetujui?</p>
-        <button onclick="acceptCookies()">Ya, saya setuju</button>
-        <button onclick="declineCookies()">Tidak</button>
-    </div>
     <header>
         <div class="container">
             <h1>📚 Perpustakaan Yola Tri Vani 📚</h1>
@@ -228,10 +223,13 @@
                 <p>Oleh RA.Kartini</p>
                 <p>Tahun rilis: 1911</p>
                 <a href="https://drive.google.com/file/d/12Me18U4YvyWgZ9JM515b75x2GhGAkuMU/view" onclick="alertToEbook()">📥 Baca eBook</a>
-            </div>
-        </div>
+<div id="cookiePopup">
+        <p>Website ini menggunakan cookie untuk meningkatkan pengalaman Anda. Apakah Anda menyetujui?</p>
+        <button onclick="acceptCookies()">Ya, saya setuju</button>
+        <button onclick="declineCookies()">Tidak</button>
     </div>
-
+    </div>
+    </div>
     <div class="slide" id="about">
         <h2>About Me</h2>
         <p>Halaman ini berisi tentang saya</p>
@@ -313,15 +311,41 @@
             alert("Terima kasih " + name + "! Pengaduan atau saran Anda telah dikirim.");
             document.getElementById("contactForm").reset();
         });
-            function acceptCookies() {
-            document.cookie = "cookieAccepted=true; path=/; max-age=" + 60 * 60 * 24 * 30;
-            document.getElementById("cookiePopup").style.display = "none";
+            function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
         }
+
+        function getCookie(name) {
+            let nameEQ = name + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function acceptCookies() {
+            setCookie("cookieAccepted", "true", 30);
+            document.getElementById("cookiePopup").style.display = "none";
+            alert("Terima kasih telah menerima cookie. Selamat datang di Perpustakaan Yola Tri Vani! 📚");
+        }
+
         function declineCookies() {
+            setCookie("cookieAccepted", "false", 30);
             document.getElementById("cookiePopup").style.display = "none";
+            alert("Anda menolak cookie. Beberapa fitur mungkin terbatas.");
         }
+
         window.onload = function () {
-            if (!document.cookie.includes("cookieAccepted=true")) {
+            if (!getCookie("cookieAccepted")) {
                 document.getElementById("cookiePopup").style.display = "block";
             }
         };

@@ -170,45 +170,7 @@
         .book-card .book-title {
             font-weight: bold;
             margin: 10px 0 5px;
-}
-    .cookie-popup {
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
-    padding: 20px 30px;
-    width: 80%;
-    max-width: 500px;
-    color: white;
-    text-align: center;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-    display: none;
-    animation: fadeInUp 1s ease-out;
-}
-.cookie-popup button {
-    margin: 10px 5px;
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    background: #3cb371;
-    color: white;
-}
-.cookie-popup button:hover {
-    background: #2e8b57;
-}
-.cookie-icon {
-    font-size: 40px;
-    display: block;
-    margin-bottom: 10px;
-}
+        }
     </style>
 </head>
 
@@ -265,7 +227,7 @@
         </div>
      <div id="cookiePopup" class="cookie-popup">
     <div class="cookie-content">
-        <span class="cookie-icon">🍪</span>
+        <span class="cookie-icon"> </span>
         <p>Website ini menggunakan cookie untuk meningkatkan pengalaman Anda. Apakah Anda menyetujui?</p>
         <button onclick="acceptCookies()">Ya, saya setuju</button>
         <button onclick="declineCookies()">Tidak</button>
@@ -315,12 +277,7 @@
         </table>
         </form>
     </div>
-    <div id="cookiePopup" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#2e8b57; color:white; padding:20px; text-align:center; z-index:999;">
-        <p>Website ini menggunakan cookie untuk meningkatkan pengalaman Anda. Apakah Anda menyetujui?</p>
-        <button onclick="acceptCookies()" style="margin: 0 10px; padding: 8px 15px; background: #fff; color: #2e8b57; border: none; border-radius: 5px;">Ya, saya setuju</button>
-        <button onclick="declineCookies()" style="margin: 0 10px; padding: 8px 15px; background: #ff6347; color: white; border: none; border-radius: 5px;">Tidak</button>
-    </div>
-    
+   
     <footer>
         <div class="container">
             <p>&copy; 2025 Perpustakaan Yola Tri Vani</p>

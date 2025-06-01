@@ -224,7 +224,10 @@
                 <p>Tahun rilis: 1911</p>
                 <a href="https://drive.google.com/file/d/12Me18U4YvyWgZ9JM515b75x2GhGAkuMU/view" onclick="alertToEbook()">📥 Baca eBook</a>
             </div>
-        </div>
+<div id="cookiePopup" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#2e8b57; color:white; padding:20px; text-align:center; z-index:999;">
+    <p>Website ini menggunakan cookie untuk meningkatkan pengalaman Anda. Apakah Anda menyetujui?</p>
+    <button onclick="acceptCookies()" style="margin: 0 10px; padding: 8px 15px; background: #fff; color: #2e8b57; border: none; border-radius: 5px;">Ya, saya setuju</button>
+    <button onclick="declineCookies()" style="margin: 0 10px; padding: 8px 15px; background: #ff6347; color: white; border: none; border-radius: 5px;">Tidak</button>
     </div>
 
     <div class="slide" id="about">
@@ -303,7 +306,7 @@
             alert("Terima kasih " + name + "! Pengaduan atau saran Anda telah dikirim.");
             document.getElementById("contactForm").reset();
         });
-                function setCookie(name, value, days) {
+            function setCookie(name, value, days) {
             let expires = "";
             if (days) {
                 let date = new Date();
@@ -312,8 +315,7 @@
             }
             document.cookie = name + "=" + (value || "") + expires + "; path=/";
         }
-
-        function getCookie(name) {
+            function getCookie(name) {
             let nameEQ = name + "=";
             let ca = document.cookie.split(';');
             for (let i = 0; i < ca.length; i++) {
@@ -323,20 +325,17 @@
             }
             return null;
         }
-
-        function acceptCookies() {
+            function acceptCookies() {
             setCookie("cookieAccepted", "true", 30);
             document.getElementById("cookiePopup").style.display = "none";
             alert("Terima kasih telah menerima cookie. Selamat datang di Perpustakaan Yola Tri Vani! 📚");
         }
-
-        function declineCookies() {
+            function declineCookies() {
             setCookie("cookieAccepted", "false", 30);
             document.getElementById("cookiePopup").style.display = "none";
             alert("Anda menolak cookie. Beberapa fitur mungkin terbatas.");
         }
-
-        window.onload = function () {
+            window.onload = function () {
             if (!getCookie("cookieAccepted")) {
                 document.getElementById("cookiePopup").style.display = "block";
             }

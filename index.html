@@ -310,42 +310,43 @@
             alert("Terima kasih " + name + "! Pengaduan atau saran Anda telah dikirim.");
             document.getElementById("contactForm").reset();
         });
-        function setCookie(name, value, days) {
-        let expires = "";
-        if (days) {
-            const date = new Date();
-            date.setTime(date.getTime() + (days*24*60*60*1000));
-            expires = "; expires=" + date.toUTCString();
+            function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
         }
-        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-    }
 
-    function getCookie(name) {
-        const nameEQ = name + "=";
-        const ca = document.cookie.split(';');
-        for(let i=0;i < ca.length;i++) {
-            let c = ca[i];
-            while (c.charAt(0)==' ') c = c.substring(1,c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        function getCookie(name) {
+            let nameEQ = name + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
         }
-        return null;
-    }
 
-    function acceptCookies() {
-        setCookie("cookieAccepted", "true", 365);
-        document.getElementById("cookiePopup").classList.remove("show");
-    }
-
-    function declineCookies() {
-        document.getElementById("cookiePopup").classList.remove("show");
-    }
-
-    window.onload = function () {
-        if (!getCookie("cookieAccepted")) {
-            const popup = document.getElementById("cookiePopup");
-            popup.classList.add("show");
-            popSound.play();
+        function acceptCookies() {
+            setCookie("cookieAccepted", "true", 30);
+            document.getElementById("cookiePopup").style.display = "none";
+            alert("Terima kasih telah menerima cookie. Selamat datang di Perpustakaan Yola Tri Vani! 📚");
         }
+
+        function declineCookies() {
+            setCookie("cookieAccepted", "false", 30);
+            document.getElementById("cookiePopup").style.display = "none";
+            alert("Anda menolak cookie. Beberapa fitur mungkin terbatas.");
+        }
+
+        window.onload = function () {
+            if (!getCookie("cookieAccepted")) {
+                document.getElementById("cookiePopup").style.display = "block";
+            }
     };
     </script>
 </body>

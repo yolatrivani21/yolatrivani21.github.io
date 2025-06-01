@@ -225,14 +225,12 @@
                 <a href="https://drive.google.com/file/d/12Me18U4YvyWgZ9JM515b75x2GhGAkuMU/view" onclick="alertToEbook()">📥 Baca eBook</a>
             </div>
         </div>
-     <div id="cookiePopup" class="cookie-popup">
-    <div class="cookie-content">
-        <span class="cookie-icon"> </span>
+    <div id="cookiePopup" style="display:none; position:fixed; top:0; left:0; right:0; background:#2e8b57; color:white; padding:20px; text-align:center; z-index:999;">
         <p>Website ini menggunakan cookie untuk meningkatkan pengalaman Anda. Apakah Anda menyetujui?</p>
-        <button onclick="acceptCookies()">Ya, saya setuju</button>
-        <button onclick="declineCookies()">Tidak</button>
+        <button onclick="acceptCookies()" style="margin: 0 10px; padding: 8px 15px; background: #fff; color: #2e8b57; border: none; border-radius: 5px;">Ya, saya setuju</button>
+        <button onclick="declineCookies()" style="margin: 0 10px; padding: 8px 15px; background: #ff6347; color: white; border: none; border-radius: 5px;">Tidak</button>
+        </div>
     </div>
-</div>
 </div> 
     <div class="slide" id="about">
         <h2>About Me</h2>
@@ -310,10 +308,7 @@
             alert("Terima kasih " + name + "! Pengaduan atau saran Anda telah dikirim.");
             document.getElementById("contactForm").reset();
         });
-            <script>
-    const popSound = new Audio("https://cdn.pixabay.com/download/audio/2022/03/15/audio_643d51051d.mp3?filename=pop-94319.mp3");
-
-    function setCookie(name, value, days) {
+        function setCookie(name, value, days) {
         let expires = "";
         if (days) {
             const date = new Date();

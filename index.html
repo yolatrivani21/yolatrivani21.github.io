@@ -403,7 +403,6 @@ form button {
     <li><a href="#" onclick="showSlide('home')">🔙 Kembali ke Beranda</a></li>
     </ul>
     </div>   
- 
     <section id="formulir-pengunjung" class="hidden">
       <h2>Formulir Pengunjung</h2>
       <form>
@@ -455,6 +454,9 @@ form button {
 </footer>
 
 <script>
+function showSlide(id) {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.classList.remove('active'));
 function showSlide(id) {
   const slides = document.querySelectorAll('.slide');
   slides.forEach(slide => slide.style.display = 'none');

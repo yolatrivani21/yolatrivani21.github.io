@@ -394,16 +394,38 @@ form button {
         </div>
     </div> 
 </div>
-
-    <div id="Lainnya" class="slide">
-    <h2>⚙️ Menu Lainnya</h2>
-    <p>Silakan isi data kunjungan Anda ke Perpustakaan Yola Tri Vani:</p>
-    <ul>
-    <li><a href="#" onclick="showSlide('formulir-pengunjung')">Formulir Pengunjung</a></li>
-    <li><a href="#" onclick="showSlide('tabel-perkalian')">Tabel Perkalian</a></li>
-    <li><a href="#" onclick="showSlide('home')">🔙 Kembali ke Beranda</a></li>
-    </ul>
-    </div>   
+<div id="Lainnya" class="slide">
+  <h2>⚙️ Menu Lainnya</h2>
+  <p>Silakan isi data kunjungan Anda ke <strong>Perpustakaan Yola Tri Vani</strong>:</p>
+  <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+    <thead>
+      <tr style="background-color: #f0f0f0;">
+        <th style="padding: 10px; border: 1px solid #ccc;">📄 Menu</th>
+        <th style="padding: 10px; border: 1px solid #ccc;">🧭 Aksi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 10px; border: 1px solid #ccc;">Formulir Pengunjung</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">
+          <a href="#" onclick="showSlide('formulir-pengunjung')">➡️ Buka Formulir</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border: 1px solid #ccc;">Tabel Perkalian</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">
+          <a href="#" onclick="showSlide('tabel-perkalian')">🧮 Lihat Tabel</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border: 1px solid #ccc;">Kembali ke Beranda</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">
+          <a href="#" onclick="showSlide('home')">🏠 Kembali</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
     <section id="formulir-pengunjung" class="slide">
      <div style="max-width: 700px; margin: 0 auto; background: #fff; padding: 30px 40px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
      <h2 style="text-align: center;">Formulir Pengunjung</h2>

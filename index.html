@@ -214,6 +214,42 @@
 .event-card a:hover {
     text-decoration: underline;
 }
+    #menu-lainnya, #formulir-pengunjung, #tabel-perkalian {
+  margin: 40px 0;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+
+#menu-lainnya ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#menu-lainnya li {
+  margin: 10px 0;
+}
+
+#menu-lainnya a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
 </style>
 </head>
 
@@ -226,6 +262,7 @@
                 <a onclick="showSlide('about')">👩‍💼 About Us</a>
                 <a onclick="showSlide('contact')">📝 Contact Us</a>
                 <a onclick="showSlide('event')">📅 Event</a>
+               <a onclick="showSlide('Lainnya')">⚙️ Pengaturan</a>
             </nav>
         </div>
     </header>
@@ -355,8 +392,76 @@
             <p>Acara yang mengangkat isu lingkungan dan gaya hidup berkelanjutan, termasuk talkshow, workshop ecobrick, dan kegiatan bersih-bersih kampus.</p>
             <a href="https://qs-gen.com/green-gala-embodying-gen-zs-concern-for-environmental-conservation-through-eco-living-waste-recycling/" target="_blank">🔗 Info Selengkapnya</a>
         </div>
-    </div>
+    
+     <div id="Lainnyat" class="slide">
+  <h2>Menu Lainnya</h2>
+  <ul>
+    <li><a href="#formulir-pengunjung">Formulir Pengunjung</a></li>
+    <li><a href="#tabel-perkalian">Tabel Perkalian</a></li>
+    <li><a onclick="showSlide('Beranda')">Kembali ke Beranda</a></li>
+  </ul>
+
+  <div id="formulir-pengunjung">
+    <h3>Formulir Pengunjung</h3>
+    <form>
+      <label>Nama Lengkap:</label><br>
+      <input type="text" required><br><br>
+
+      <label>Alamat Email:</label><br>
+      <input type="email" required><br><br>
+
+      <label>Nomor Telepon:</label><br>
+      <input type="tel" required><br><br>
+
+      <label>Jenis Kelamin:</label><br>
+      <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+      <input type="radio" name="gender" value="Perempuan"> Perempuan<br><br>
+
+      <label>Jenis Pengunjung:</label><br>
+      <select required>
+        <option value="">-- Pilih --</option>
+        <option value="Siswa">Siswa</option>
+        <option value="Guru">Guru</option>
+        <option value="Umum">Umum</option>
+      </select><br><br>
+
+      <label>Alamat Singkat:</label><br>
+      <textarea rows="3" required></textarea><br><br>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+
+  <!-- Tabel Perkalian -->
+  <div id="tabel-perkalian">
+    <h3>Tabel Perkalian 1–10</h3>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <thead>
+        <tr>
+          <th>x</th>
+          <!-- Angka 1-10 -->
+          <script>
+            for (let i = 1; i <= 10; i++) {
+              document.write('<th>' + i + '</th>');
+            }
+          </script>
+        </tr>
+      </thead>
+      <tbody>
+        <script>
+          for (let i = 1; i <= 10; i++) {
+            document.write('<tr><th>' + i + '</th>');
+            for (let j = 1; j <= 10; j++) {
+              document.write('<td>' + (i * j) + '</td>');
+            }
+            document.write('</tr>');
+          }
+        </script>
+      </tbody>
+    </table>
+  </div>
 </div>
+
 
     <footer>
         <div class="container">

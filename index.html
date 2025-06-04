@@ -403,7 +403,7 @@ form button {
     <li><a href="#" onclick="showSlide('home')">🔙 Kembali ke Beranda</a></li>
     </ul>
     </div>   
-    <section id="formulir-pengunjung" class="hidden">
+    <section id="formulir-pengunjung" class="slide">
       <h2>Formulir Pengunjung</h2>
       <form>
         <label for="nama">Nama:</label>
@@ -437,12 +437,12 @@ form button {
     </section>
 
   <div id="tabel-perkalian">
+    <section id="tabel-perkalian" class="slide">
     <h3>Tabel Perkalian</h3>
     <table>
       <tr><th>1 x 1</th><td>1</td></tr>
       <tr><th>2 x 2</th><td>4</td></tr>
       <tr><th>3 x 3</th><td>9</td></tr>
-      <!-- Bisa dilanjutkan -->
     </table>
   </div>
 </div>
@@ -454,9 +454,6 @@ form button {
 </footer>
 
 <script>
-function showSlide(id) {
-    const slides = document.querySelectorAll('.slide');
-    slides.forEach(slide => slide.classList.remove('active'));
 function showSlide(id) {
   const slides = document.querySelectorAll('.slide');
   slides.forEach(slide => slide.style.display = 'none');

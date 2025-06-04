@@ -395,7 +395,6 @@ form button {
     </div> 
 </div>
 
-        
     <div id="Lainnya" class="slide">
     <h2>⚙️ Menu Lainnya</h2>
     <ul>
@@ -456,16 +455,6 @@ form button {
 </footer>
 
 <script>
-function showSlide(id) {
-    const slides = document.querySelectorAll('.slide');
-    slides.forEach(slide => {
-      slide.classList.add('hidden');
-    });
-
-    const target = document.getElementById(id);
-    if (target) {
-      target.classList.remove('hidden');
-    }
 function tampilkanForm() {
 document.getElementById('formulir-pengunjung').classList.remove('hidden');
 document.getElementById('tabel-perkalian').classList.add('hidden');

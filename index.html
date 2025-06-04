@@ -399,11 +399,12 @@ form button {
     <div id="Lainnya" class="slide">
     <h2>⚙️ Menu Lainnya</h2>
     <ul>
-    <li><a href="#formulir-pengunjung">Formulir Pengunjung</a></li>
-    <li><a href="#tabel-perkalian">Tabel Perkalian</a></li>
-    <li><a onclick="showSlide('home')">🔙 Kembali ke Beranda</a></li>
+    <li><a href="#" onclick="showSlide('formulir-pengunjung')">Formulir Pengunjung</a></li>
+    <li><a href="#" onclick="showSlide('tabel-perkalian')">Tabel Perkalian</a></li>
+    <li><a href="#" onclick="showSlide('home')">🔙 Kembali ke Beranda</a></li>
     </ul>
-    </section>
+    </div>   
+ 
     <section id="formulir-pengunjung" class="hidden">
       <h2>Formulir Pengunjung</h2>
       <form>
@@ -448,7 +449,23 @@ form button {
   </div>
 </div>
     
+<footer>
+    <div class="container">
+    <p>&copy; 2025 Perpustakaan Yola Tri Vani</p>
+</div>
+</footer>
+
 <script>
+function showSlide(id) {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => {
+      slide.classList.add('hidden');
+    });
+
+    const target = document.getElementById(id);
+    if (target) {
+      target.classList.remove('hidden');
+    }
 function tampilkanForm() {
 document.getElementById('formulir-pengunjung').classList.remove('hidden');
 document.getElementById('tabel-perkalian').classList.add('hidden');

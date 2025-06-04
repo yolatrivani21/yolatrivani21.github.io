@@ -403,18 +403,39 @@ form button {
     <li><a href="#tabel-perkalian">Tabel Perkalian</a></li>
     <li><a onclick="showSlide('home')">🔙 Kembali ke Beranda</a></li>
     </ul>
-    <div id="formulir-pengunjung">
-    <h3>Formulir Pengunjung</h3>
-     <form>
-      <label for="nama">Nama:</label>
-      <input type="text" id="nama" name="nama">
-      <label for="alamat">Alamat:</label>
-      <input type="text" id="alamat" name="alamat">
-      <label for="instansi">Instansi:</label>
-      <input type="text" id="instansi" name="instansi">
-      <button type="submit">Kirim</button>
-    </form>
-  </div>
+    </section>
+    <section id="formulir-pengunjung" class="hidden">
+      <h2>Formulir Pengunjung</h2>
+      <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Alamat Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telepon">Nomor Telepon:</label>
+        <input type="tel" id="telepon" name="telepon" required>
+
+        <label>Jenis Kelamin:</label>
+        <input type="radio" id="laki" name="kelamin" value="Laki-laki" required>
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="kelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label>
+
+        <label for="jenis">Jenis Pengunjung:</label>
+        <select id="jenis" name="jenis">
+          <option value="siswa">Siswa</option>
+          <option value="guru">Guru</option>
+          <option value="umum">Umum</option>
+        </select>
+
+        <label for="alamat">Alamat Singkat:</label>
+        <textarea id="alamat" name="alamat" rows="3" required></textarea>
+
+        <br><br>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
 
   <div id="tabel-perkalian">
     <h3>Tabel Perkalian</h3>
@@ -426,7 +447,12 @@ form button {
     </table>
   </div>
 </div>
+    
 <script>
+function tampilkanForm() {
+document.getElementById('formulir-pengunjung').classList.remove('hidden');
+document.getElementById('tabel-perkalian').classList.add('hidden');
+}
 function showSlide(id) {
   const slides = document.querySelectorAll('.slide');
   slides.forEach(slide => slide.style.display = 'none');

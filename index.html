@@ -397,6 +397,7 @@ form button {
 
     <div id="Lainnya" class="slide">
     <h2>⚙️ Menu Lainnya</h2>
+    <p>Silakan isi data kunjungan Anda ke Perpustakaan Yola Tri Vani:</p>
     <ul>
     <li><a href="#" onclick="showSlide('formulir-pengunjung')">Formulir Pengunjung</a></li>
     <li><a href="#" onclick="showSlide('tabel-perkalian')">Tabel Perkalian</a></li>
@@ -407,35 +408,76 @@ form button {
       <h2>Formulir Pengunjung</h2>
         <p>Silakan isi data kunjungan Anda ke Perpustakaan Yola Tri Vani:</p>
       <form>
-        <label for="nama">Nama:</label>
-        <input type="text" id="nama" name="nama" required>
+      <table style="margin: 0 auto; max-width: 600px; width: 100%; border-collapse: separate; border-spacing: 10px 15px;">
+      <tr>
+        <th style="text-align: left; width: 35%; vertical-align: middle;">
+          <label for="nama">Nama:</label>
+        </th>
+        <td style="width: 65%;">
+          <input type="text" id="nama" name="nama" required placeholder="Masukkan nama Anda">
+        </td>
+      </tr>
 
-        <label for="email">Alamat Email:</label>
-        <input type="email" id="email" name="email" required>
+      <tr>
+        <th style="text-align: left; vertical-align: middle;">
+          <label for="email">Alamat Email:</label>
+        </th>
+        <td>
+          <input type="email" id="email" name="email" required placeholder="Masukkan email Anda">
+        </td>
+      </tr>
 
-        <label for="telepon">Nomor Telepon:</label>
-        <input type="tel" id="telepon" name="telepon" required>
+      <tr>
+        <th style="text-align: left; vertical-align: middle;">
+          <label for="telepon">Nomor Telepon:</label>
+        </th>
+        <td>
+          <input type="tel" id="telepon" name="telepon" required placeholder="Masukkan nomor telepon">
+        </td>
+      </tr>
 
-        <label>Jenis Kelamin:</label>
-        <input type="radio" id="laki" name="kelamin" value="Laki-laki" required>
-        <label for="laki">Laki-laki</label>
-        <input type="radio" id="perempuan" name="kelamin" value="Perempuan">
-        <label for="perempuan">Perempuan</label>
+      <tr>
+        <th style="text-align: left; vertical-align: middle;">Jenis Kelamin:</th>
+        <td>
+          <input type="radio" id="laki" name="kelamin" value="Laki-laki" required>
+          <label for="laki">Laki-laki</label>
+          &nbsp;&nbsp;
+          <input type="radio" id="perempuan" name="kelamin" value="Perempuan">
+          <label for="perempuan">Perempuan</label>
+        </td>
+      </tr>
 
-        <label for="jenis">Jenis Pengunjung:</label>
-        <select id="jenis" name="jenis">
-          <option value="siswa">Siswa</option>
-          <option value="guru">Guru</option>
-          <option value="umum">Umum</option>
-        </select>
+      <tr>
+        <th style="text-align: left; vertical-align: middle;">
+          <label for="jenis">Jenis Pengunjung:</label>
+        </th>
+        <td>
+          <select id="jenis" name="jenis" required>
+            <option value="" disabled selected>Pilih jenis pengunjung</option>
+            <option value="siswa">Siswa</option>
+            <option value="guru">Guru</option>
+            <option value="umum">Umum</option>
+          </select>
+        </td>
+      </tr>
 
-        <label for="alamat">Alamat Singkat:</label>
-        <textarea id="alamat" name="alamat" rows="3" required></textarea>
+      <tr>
+        <th style="text-align: left; vertical-align: top;">
+          <label for="alamat">Alamat Singkat:</label>
+        </th>
+        <td>
+          <textarea id="alamat" name="alamat" rows="3" required placeholder="Masukkan alamat singkat"></textarea>
+        </td>
+      </tr>
 
-        <br><br>
-        <button type="submit">Kirim</button>
-      </form>
-    </section>
+      <tr>
+        <td colspan="2" style="text-align: center; padding-top: 20px;">
+          <button type="submit">Kirim</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</section>  
 
   <div id="tabel-perkalian">
     <section id="tabel-perkalian" class="slide">

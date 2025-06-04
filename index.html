@@ -394,12 +394,12 @@ form button {
         </div>
         
     <div id="Lainnya" class="slide">
-  <h2>⚙️ Menu Lainnya</h2>
-  <ul>
+    <h2>⚙️ Menu Lainnya</h2>
+    <ul>
     <li><a href="#formulir-pengunjung">Formulir Pengunjung</a></li>
     <li><a href="#tabel-perkalian">Tabel Perkalian</a></li>
     <li><a onclick="showSlide('home')">🔙 Kembali ke Beranda</a></li>
-  </ul>
+    </ul>
 
   <div id="formulir-pengunjung">
     <h3>Formulir Pengunjung</h3>
@@ -440,7 +440,8 @@ function showSlide(id) {
         function alertToEbook() {
             alert("Anda akan membuka eBook di tab baru.");
         }
-
+window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
         document.getElementById("contactForm").addEventListener("submit", function (event) {
             event.preventDefault();
             let name = document.getElementById("name").value;

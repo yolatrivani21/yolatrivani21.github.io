@@ -1284,19 +1284,6 @@ Copy code
 
 
 <script>
-function showSlide(id) {
-  const slides = document.querySelectorAll('.slide');
-  slides.forEach(slide => slide.style.display = 'none');
-  document.getElementById(id).style.display = 'block';
-}
-        function showSlide(id) {
-            let slides = document.querySelectorAll('.slide');
-            slides.forEach(slide => {
-                slide.classList.remove('active');
-            });
-            document.getElementById(id).classList.add('active');
-        }
-
         function alertToEbook() {
             alert("Anda akan membuka eBook di tab baru.");
         }
